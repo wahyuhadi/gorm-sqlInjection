@@ -1,5 +1,10 @@
 # Simple Hard Sql Injection In GORM
 
+
+## issue 
+
+https://github.com/jinzhu/gorm/issues/2517
+
 ## Sql Injection In First and Find Function in Gorm
 ```go
 func GetUser(c *gin.Context) {
