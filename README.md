@@ -1,4 +1,4 @@
-# Simple Hard Sql Injection In GORM
+# Simple  Sql Injection In GORM
 
 
 ## issue 
