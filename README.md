@@ -4,6 +4,8 @@
 ## issue 
 
 https://github.com/jinzhu/gorm/issues/2517
+moved to
+https://github.com/go-gorm/gorm/issues/2517
 
 ## Sql Injection In First and Find Function in Gorm
 ```go
